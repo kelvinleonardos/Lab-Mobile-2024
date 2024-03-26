@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bgg">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/header" />
+
+    <TextView
+        android:id="@+id/textNote"
+        android:layout_width="110dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/include"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="114dp"
+        android:text="Add Note : "
+        android:textColor="#7F5539"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardnote1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/textNote">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="348dp"
+            android:layout_height="204dp"
+            android:layout_centerHorizontal="true"
+            android:background="#FFF7F1"
+            app:cardCornerRadius="10dp">
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="307dp"
+                android:layout_height="66dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:hint="Title"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="307dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/editText1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:hint="Content"
+                android:maxLines="1" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardnote1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="#DF826C"
+        android:text="SAVE" />
+
+</RelativeLayout>
