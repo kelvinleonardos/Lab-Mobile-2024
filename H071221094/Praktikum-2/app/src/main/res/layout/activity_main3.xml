@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/judul2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="TugasPraktikumIntent"
+        android:textSize="25dp"
+        android:textColor="@color/Kuning"
+        android:textStyle="bold"
+        android:background="@color/white"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Kuning"
+        android:padding="10dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:paddingTop="30dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/imginpt"/>
+
+        <View
+            android:layout_below="@id/imageView3"
+            android:id="@+id/view1"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/radius"/>
+
+        <TextView
+            android:layout_below="@+id/view1"
+            android:layout_alignTop="@id/view1"
+            android:id="@+id/namaHasil"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Belum ada input"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/usernameHasil"
+            android:textAlignment="center"
+            android:layout_marginStart="10dp"
+            android:layout_alignTop="@id/view1"
+            android:layout_marginTop="60dp"
+            android:layout_below="@id/namaHasil"
+            android:layout_alignStart="@id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Belum ada input"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/titleHasil"
+            android:layout_below="@id/view1"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius"
+            android:text="Belum ada input"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/contentHasil"
+            android:background="@drawable/radius"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_below="@id/titleHasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Belum ada input"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
