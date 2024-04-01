@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bgg">
+
+        <include layout="@layout/header"/>
+
+        <ImageView
+            android:id="@+id/gambar"
+            android:layout_width="167dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/baseline_image_search_24" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardnote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:layout_below="@id/gambar">
+
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="358dp"
+                android:layout_height="193dp"
+                android:background="#FFF7F1">
+
+                <EditText
+                    android:id="@+id/nama"
+                    android:layout_width="313dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:hint="Name"
+                    android:maxLines="1" />
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="313dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nama"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="27dp"
+                    android:hint="Username"
+                    android:maxLines="1" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_nama"
+            android:layout_width="322dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardnote"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#DF826C"
+            android:text="SUBMIT"
+            android:textSize="17sp"/>
+    </RelativeLayout>
