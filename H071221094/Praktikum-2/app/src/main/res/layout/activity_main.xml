@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/Kuning"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="TugasPraktikumIntent"
+        android:textSize="25dp"
+        android:textColor="@color/Kuning"
+        android:textStyle="bold"
+        android:background="@color/white"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imginpt"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"/>
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:background="@drawable/radius">
+
+        
+        <EditText            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama"/>
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText2"
+            android:hint="Username"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText3"
+            android:layout_marginTop="50dp"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:backgroundTint="@color/Kuning"/>
+            
+    </RelativeLayout>
+
+</LinearLayout>
