@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card"
+        app:cardBackgroundColor="@color/black">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profilAccount"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/scuderia"/>
+
+        <TextView
+            android:id="@+id/tv_namaAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Lorem Ipsum"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="25dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="460dp"
+            android:layout_marginTop="60dp">
+
+            <ImageView
+                android:id="@+id/iv_foto"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cl" />
+        </FrameLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_deskrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at commodo massa. Quisque non risus id sapien aliquam volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed pharetra sapien quis bibendum placerat."
+            android:textColor="@color/white"
+            android:textSize="8dp"
+            android:textStyle="italic"
+            android:layout_marginTop="510dp"
+            android:padding="15dp"/>
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/merah"
+    tools:context=".MainActivity4">
+
+    <include layout="@layout/layout_haeder"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/black">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilHasil"
+                android:layout_margin="20dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/scuderia"/>
+
+            <TextView
+                android:id="@+id/namaHasil"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="75dp"
+                android:textStyle="bold|italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="scuderiaferrari"/>
+
+           <FrameLayout
+               android:layout_marginTop="80dp"
+               android:layout_width="match_parent"
+               android:layout_height="500dp">
+               <ImageView
+                   android:id="@+id/postHasil"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:scaleType="centerCrop"
+                   android:src="@drawable/cl"/>
+           </FrameLayout>
+
+            <TextView
+                android:id="@+id/deskriphasil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:text="Lorem ipsum"
+                android:layout_marginTop="600dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+        </androidx.cardview.widget.CardView>
+</LinearLayout>
