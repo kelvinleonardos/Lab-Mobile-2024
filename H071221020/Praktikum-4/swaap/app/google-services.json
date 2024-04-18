@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "985055449064",
+    "project_id": "swaap-a3349",
+    "storage_bucket": "swaap-a3349.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985055449064:android:2ffba424ae0c2dd9671e5d",
+        "android_client_info": {
+          "package_name": "com.example.swaap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrP9QcI3JMGnRZNt5TZspHtPPx1gVoLuE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
